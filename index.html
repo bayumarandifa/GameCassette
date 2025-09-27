@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Cassette Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🎵 Retro Cassette Player 🎵</h1>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        
+        <div class="cassette-player">
+            <div class="cassette" id="cassette">
+                <div class="cassette-body">
+                    <div class="label">
+                        <div class="title" id="songTitle">AWESOME MIX</div>
+                        <div class="artist" id="artist">VOL. 1</div>
+                    </div>
+                    <div class="reels">
+                        <div class="reel left-reel" id="leftReel">
+                            <div class="reel-center"></div>
+                        </div>
+                        <div class="reel right-reel" id="rightReel">
+                            <div class="reel-center"></div>
+                        </div>
+                    </div>
+                    <div class="tape-window">
+                        <div class="tape" id="tape"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="playBtn">▶️</button>
+                <button class="control-btn" id="pauseBtn">⏸️</button>
+                <button class="control-btn" id="stopBtn">⏹️</button>
+                <button class="control-btn" id="rewindBtn">⏪</button>
+                <button class="control-btn" id="fastForwardBtn">⏩</button>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="instructions">
+                <p>🎯 Click the cassette to collect points!</p>
+                <p>🎮 Use controls to change cassette colors!</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Clicks:</span>
+                    <span id="clicks">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Level:</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Speed:</span>
+                    <span id="speed">1x</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="achievements">
+            <h3>🏆 Achievements</h3>
+            <div class="achievement-list" id="achievementList">
+                <div class="achievement locked" data-achievement="first-click">
+                    <span class="achievement-icon">🎵</span>
+                    <span class="achievement-text">First Click</span>
+                </div>
+                <div class="achievement locked" data-achievement="speed-demon">
+                    <span class="achievement-icon">⚡</span>
+                    <span class="achievement-text">Speed Demon</span>
+                </div>
+                <div class="achievement locked" data-achievement="collector">
+                    <span class="achievement-icon">💎</span>
+                    <span class="achievement-text">Collector</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
