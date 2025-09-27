@@ -1,0 +1,16 @@
+{
+  "name": "cassette-game",
+  "version": "1.0.0",
+  "description": "A retro cassette game",
+  "main": "script.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["game", "cassette", "retro"],
+  "author": "",
+  "license": "ISC"
+}
